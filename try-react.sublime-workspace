@@ -1,0 +1,1103 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"csrf",
+				"csrf\tDjango template csrf token"
+			],
+			[
+				"Project",
+				"ProjectModelSerializer\ttype"
+			],
+			[
+				"projects",
+				"project_last_display\t"
+			],
+			[
+				"Blog",
+				"BlogModelSerializer\ttype"
+			],
+			[
+				"a",
+				"a\t<a>"
+			],
+			[
+				"lorem",
+				"lorem\tLorem ipsum"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"rad",
+				"rad"
+			],
+			[
+				"red_blobs",
+				"red_blobs"
+			],
+			[
+				"speed",
+				"_speed"
+			],
+			[
+				"iframe",
+				"iframe\tTag"
+			],
+			[
+				"meta",
+				"meta\t<meta name=\"\" content=\"\">"
+			],
+			[
+				"d",
+				"del\tkeyword"
+			],
+			[
+				"import",
+				"__import__\t__import__"
+			],
+			[
+				"media",
+				"@media"
+			],
+			[
+				"padding",
+				"padding-right"
+			],
+			[
+				"setInterval",
+				"setInterval"
+			],
+			[
+				"getElemen",
+				"getElementById\t( elementId: DOMString ): Element Document"
+			],
+			[
+				"console",
+				"console.\tconsole.log()"
+			],
+			[
+				"gray",
+				"gray"
+			],
+			[
+				"as",
+				"async\tAttr"
+			],
+			[
+				"jum",
+				"jumbo"
+			],
+			[
+				"u",
+				"url()"
+			],
+			[
+				"nav",
+				"nav\t<nav>"
+			],
+			[
+				"new_sut",
+				"new_student_id"
+			],
+			[
+				"new_studen",
+				"new_student_name"
+			],
+			[
+				"auto_now",
+				"auto_now_add"
+			],
+			[
+				"name",
+				"name\tNamespace"
+			],
+			[
+				"using",
+				"using\tnamespace"
+			],
+			[
+				"def",
+				"def\tFunction"
+			],
+			[
+				"students",
+				"students_titlecase"
+			],
+			[
+				"student",
+				"student_id"
+			],
+			[
+				"n",
+				"new"
+			],
+			[
+				"pre_save",
+				"pre_save_post_reciever"
+			],
+			[
+				"upload_",
+				"upload_location"
+			],
+			[
+				"modi",
+				"ModifyPerson"
+			],
+			[
+				"E",
+				"E"
+			],
+			[
+				"pass",
+				"passEntry"
+			],
+			[
+				"oor",
+				"_oor"
+			],
+			[
+				"bun",
+				"bunny"
+			],
+			[
+				"top",
+				"topFrame"
+			],
+			[
+				"email",
+				"email_conn"
+			],
+			[
+				"user",
+				"user_email"
+			],
+			[
+				"the",
+				"the_msg"
+			],
+			[
+				"MIM",
+				"MIMEText"
+			],
+			[
+				"MIME",
+				"MIMEMultipart"
+			],
+			[
+				"uer",
+				"user_details"
+			],
+			[
+				"daet",
+				"date_text"
+			],
+			[
+				"send",
+				"send_email"
+			],
+			[
+				"pop",
+				"pop_back\tfunc"
+			],
+			[
+				"vector",
+				"I-vector\tinc"
+			],
+			[
+				"attac",
+				"attach_msg"
+			],
+			[
+				"mal",
+				"mail_text"
+			],
+			[
+				"mail",
+				"mail_text"
+			],
+			[
+				"from",
+				"from_text"
+			],
+			[
+				"SM",
+				"SMTPAuthenticationError"
+			],
+			[
+				"part_",
+				"part_2"
+			],
+			[
+				"html",
+				"html_text"
+			],
+			[
+				"mime",
+				"MIMEText"
+			],
+			[
+				"MIm",
+				"MIMEText"
+			],
+			[
+				"Mim",
+				"MIMEText"
+			],
+			[
+				"plain",
+				"plain_text"
+			],
+			[
+				"ipad",
+				"ipady"
+			],
+			[
+				"obj",
+				"objDetails"
+			],
+			[
+				"bmw",
+				"bmw"
+			],
+			[
+				"inc",
+				"inc\t#include <…>"
+			],
+			[
+				"ma",
+				"main\tmain()"
+			],
+			[
+				"iostream",
+				"I-iostream\tinc"
+			],
+			[
+				"op",
+				"openFile"
+			],
+			[
+				"text",
+				"_textArea"
+			],
+			[
+				"scroll",
+				"_scrollBar"
+			],
+			[
+				"_file",
+				"_fileMenu"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"print",
+				"print_info"
+			],
+			[
+				"get_",
+				"get_color"
+			],
+			[
+				"get",
+				"getColor"
+			],
+			[
+				"HUman",
+				"Human"
+			],
+			[
+				"key",
+				"print_key"
+			],
+			[
+				"__this",
+				"__thisTextArea"
+			],
+			[
+				"arti",
+				"article\tTag"
+			],
+			[
+				"dv",
+				"div\tTag"
+			],
+			[
+				"div",
+				"div\tTag"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"big",
+				"bigSum"
+			],
+			[
+				"ca",
+				"character"
+			],
+			[
+				"class",
+				"classifier"
+			],
+			[
+				"pred",
+				"predictions"
+			],
+			[
+				"grey",
+				"grey_height"
+			],
+			[
+				"test",
+				"test"
+			],
+			[
+				"test_",
+				"test_id"
+			],
+			[
+				"ha",
+				"header\tTag"
+			],
+			[
+				"met",
+				"meta\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/MinGW-w64.sublime-build",
+					""
+				],
+				[
+					"Packages/User/MinGW-w64.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/MinGW-w64.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++11/C++11.sublime-build",
+					""
+				],
+				[
+					"Packages/C++11/C++11.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++11/C++11.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/ESLint/ESLint.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/ESLint/ESLint.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Rust/Cargo.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/CPP_RUN.sublime-build",
+					""
+				],
+				[
+					"Packages/User/CPP_RUN.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/CPP_RUN.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/CPP_RUN.sublime-build",
+					""
+				],
+				[
+					"Packages/User/CPP_RUN.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/CPP_RUN.sublime-build",
+					"Build without C++11"
+				]
+			],
+			[
+				"Packages/User/CPP_RUN.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/MinGW-w64.sublime-build",
+					""
+				],
+				[
+					"Packages/User/MinGW-w64.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/MinGW-w64.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/c++ Build and Run.sublime-build",
+					""
+				],
+				[
+					"Packages/User/c++ Build and Run.sublime-build",
+					"New window"
+				]
+			],
+			[
+				"Packages/User/c++ Build and Run.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 112.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"Package Control: enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"SublimeREPL: Python - Sublime Text Console"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rmove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Log"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"typescript",
+				"Set Syntax: TypeScriptReact"
+			],
+			[
+				"javascrp",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"pakcage",
+				"View Package File"
+			],
+			[
+				"intsall",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: init"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"installl",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"termi",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"djang",
+				"Django: Create New Project (relative to Open File)"
+			],
+			[
+				"termin",
+				"Terminal: Open"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"autosave",
+				"Toggle AutoSave: current file only"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"livre",
+				"LiveReload: Self test"
+			]
+		],
+		"width": 448.0
+	},
+	"console":
+	{
+		"height": 416.0,
+		"history":
+		[
+			"dir(os)",
+			"os.pwd",
+			"import os",
+			"python",
+			"git",
+			"git status",
+			"exit",
+			"print'asd'",
+			"live-server",
+			"python os.path.join(os.getcwd(), 'sample.py')",
+			"os.path.join(os.getcwd(), 'sample.py')",
+			"os.getcwd()",
+			"import os",
+			"from pathlib import Path",
+			"os.getcwd()",
+			"import os",
+			"exit()",
+			"email.quit()",
+			"email.sendmail(username, username, 'HI')",
+			"email.sendmail(username, 'Hi')",
+			"email.login(username, password)",
+			"email.starttls()",
+			"email.ehlo()",
+			"email = SMTP(host, port)",
+			"password = 'thisisauselessemail'",
+			"username = '78030psg@gmail.com'",
+			"port = 587",
+			"host = 'smtp.gmail.com'",
+			"from smtplib import SMTP",
+			"import smtplib",
+			"import sys",
+			"import os",
+			"python sample.py",
+			"Running python -u \"C:\\Users\\pranav\\Desktop\\websites\\python_programs\\sample.py\"",
+			"path.text",
+			"path = os.path.join(os.getcwd(), 'App.js')",
+			"path os.path.join(os.getcwd(), 'App.js')",
+			"os.path.join(os.getcwd(), 'App.js')",
+			"os.getcwd()",
+			"import os",
+			"from requests import get",
+			"from pathlib import Path",
+			"from pathlib import Paathg",
+			"import os",
+			"import tensorflow",
+			"print('h')",
+			"npm run start",
+			"active_window()",
+			"windows()",
+			"error_message('ERRRRR!!!')",
+			"git clone",
+			"python train.py",
+			"python learning.py",
+			"import tkinter as tk",
+			"print('hi')",
+			"import tensorflow as tf",
+			"import speec_recognition",
+			"import speec_recognition'",
+			"import sys",
+			"import os",
+			"import decimal",
+			"import this",
+			"import tkinter",
+			"fuck you",
+			"print('hello')",
+			"exit()",
+			"exit",
+			"print('sublime console is purely dumb')",
+			"import sys",
+			"import tkinter as tk",
+			"import pathlib",
+			"import this",
+			"import django",
+			"pip install dataclasses",
+			"cd desktop",
+			"console.log('gi')",
+			"import tkinter",
+			"py",
+			"pu"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/coder/try-react"
+	],
+	"file_history":
+	[
+		"/F/coder/mdbootstrap/webrecorder/index.html",
+		"/F/coder/deployment/ploypex/static/js/scripts/interviews/script.js",
+		"/F/coder/mdbootstrap/webrecorder/2.html",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/attend-interview.html",
+		"/F/coder/deployment/ploypex/interviews/api/views.py",
+		"/F/coder/deployment/ploypex/interviews/api/serializers.py",
+		"/F/coder/deployment/ploypex/interviews/views/steps.py",
+		"/F/coder/deployment/ploypex/templates/interviews/interview.html",
+		"/F/coder/deployment/ploypex/templates/candidates/navbar.html",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/verify-user.html",
+		"/F/coder/deployment/ploypex/demos/models/interview.py",
+		"/F/coder/deployment/ploypex/demos/views/steps.py",
+		"/F/coder/deployment/ploypex/demos/views/create.py",
+		"/F/coder/deployment/ploypex/demos/models/role.py",
+		"/F/coder/deployment/ploypex/demos/models/__init__.py",
+		"/F/coder/deployment/ploypex/accounts/views.py",
+		"/F/coder/deployment/ploypex/templates/registration/login.html",
+		"/F/coder/deployment/ploypex/demos/urls.py",
+		"/F/coder/deployment/ploypex/demos/models/person.py",
+		"/F/coder/deployment/ploypex/demos/signals.py",
+		"/F/coder/deployment/ploypex/demos/utils.py",
+		"/F/coder/deployment/ploypex/interviews/signals.py",
+		"/F/coder/deployment/ploypex/interviews/models/interview.py",
+		"/F/coder/deployment/ploypex/interviews/__init__.py",
+		"/F/coder/deployment/ploypex/interviews/apps.py",
+		"/F/coder/deployment/ploypex/demos/views/__init__.py",
+		"/F/coder/deployment/ploypex/demos/forms/__init__.py",
+		"/F/coder/deployment/ploypex/interviews/utils.py",
+		"/F/coder/deployment/ploypex/demos/extras.py",
+		"/F/coder/deployment/ploypex/interviews/forms/steps.py",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/getting-started.html",
+		"/F/coder/deployment/dev/Lib/site-packages/django/forms/formsets.py",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/done.html",
+		"/F/coder/deployment/ploypex/templates/interviews/emails/otp.html",
+		"/F/coder/deployment/ploypex/ploypex/settings/local.py",
+		"/F/coder/deployment/ploypex/interviews/tokens.py",
+		"/F/coder/deployment/dev/Lib/site-packages/two_factor/forms.py",
+		"/F/coder/deployment/ploypex/interviews/api/urls.py",
+		"/F/coder/deployment/env/Lib/site-packages/django_otp/forms.py",
+		"/F/coder/deployment/ploypex/interviews/urls.py",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/outro-video.html",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/intro-video.html",
+		"/F/coder/deployment/ploypex/interviews/forms/__init__.py",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/verfiy-user.html",
+		"/F/coder/deployment/ploypex/interviews/views/views.py",
+		"/F/coder/deployment/env/Lib/site-packages/formtools/wizard/views.py",
+		"/F/coder/mdbootstrap/testing/recorder/templates/upload.html",
+		"/F/coder/deployment/ploypex/roles/forms/role_steps.py",
+		"/F/coder/deployment/ploypex/templates/interviews/steps/verify-user.html'",
+		"/F/coder/deployment/ploypex/templates/pages/pricing.html",
+		"/F/coder/deployment/ploypex/interviews/views/__init__.py",
+		"/F/coder/deployment/ploypex/roles/views/__init__.py",
+		"/F/coder/deployment/ploypex/roles/views/views.py",
+		"/F/coder/deployment/ploypex/templates/employers/dashboard.html",
+		"/F/coder/deployment/ploypex/templates/candidates/dashboard.html",
+		"/F/coder/deployment/ploypex/templates/pages/home.html",
+		"/F/coder/deployment/ploypex/templates/navbar.html",
+		"/F/coder/deployment/ploypex/interviews/views.py",
+		"/F/coder/deployment/ploypex/static/css/mdb.css",
+		"/F/coder/deployment/ploypex/help/urls.py",
+		"/F/coder/deployment/ploypex/templates/help/contact_form.html",
+		"/F/coder/deployment/ploypex/templates/two_factor/core/setup.html",
+		"/F/coder/deployment/ploypex/templates/roles/steps/one.html",
+		"/F/coder/deployment/ploypex/templates/roles/steps/five.html",
+		"/F/coder/Django-jwt-account-activation/accounts/views.py",
+		"/F/coder/deployment/ploypex/static/js/scripts/interviews/script.min.js",
+		"/F/coder/mdbootstrap/testing/recordings/addpipe.html",
+		"/F/coder/mdbootstrap/testing/recordings/camera_tag.html",
+		"/F/coder/mdbootstrap/testing/addpipe.html",
+		"/F/coder/mdbootstrap/testing/camera_tag.html",
+		"/F/coder/mdbootstrap/testing/recorder/recorder/urls.py",
+		"/F/coder/mdbootstrap/testing/recorder/templates/index.html",
+		"/F/coder/mdbootstrap/testing/dj_dashing/dj_dashing/settings.py",
+		"/F/coder/mdbootstrap/testing/dj_dashing/dj_dashing/urls.py",
+		"/F/coder/deployment/ploypex/static/js/scripts/interviews/tour.js",
+		"/F/coder/deployment/ploypex/templates/roles/questions/role_question_template_select.html",
+		"/F/coder/deployment/ploypex/static/js/scripts/question/question_detail.js",
+		"/F/coder/blog-templates/templates/zinnia/base.html",
+		"/F/coder/deployment/ploypex/static/js/scripts/question/question_detail.min.js",
+		"/F/coder/deployment/1.0.3",
+		"/F/coder/deployment/ploypex/static/js/scripts/question/role_use.js",
+		"/F/coder/deployment/ploypex/roles/api/serializers.py",
+		"/F/coder/deployment/ploypex/templates/questions/questiontemplate_detail.html",
+		"/F/coder/deployment/ploypex/static/js/scripts/question/role_use.min.js",
+		"/C/Users/pranav/AppData/Roaming/Sublime Text 3/Packages/Minifier/Minifier.sublime-settings",
+		"/F/coder/deployment/data/question_data.csv",
+		"/F/coder/deployment/data/video-interview-keywords.txt",
+		"/F/coder/deployment/data/video_questions.txt",
+		"/F/coder/deployment/ploypex/candidates/models/candidate.py",
+		"/F/coder/deployment/ploypex/candidates/admin.py",
+		"/F/coder/deployment/ploypex/candidates/models/__init__.py",
+		"/F/coder/deployment/ploypex/candidates/forms/steps.py",
+		"/F/coder/deployment/ploypex/candidates/migrations/0002_auto_20190718_1407.py",
+		"/F/coder/deployment/ploypex/candidates/migrations/0002_auto_20190718_1404.py",
+		"/F/coder/deployment/ploypex/roles/models/role.py",
+		"/F/coder/deployment/ploypex/static/js/modules/moment.min.js",
+		"/F/coder/deployment/ploypex/candidates/forms/forms.py",
+		"/F/coder/deployment/ploypex/candidates/forms/__init__.py",
+		"/F/coder/deployment/ploypex/templates/footer.html",
+		"/F/coder/deployment/ploypex/.ebextensions/00_http_to_https_redirect.config",
+		"/F/coder/deployment/ploypex/candidates/urls.py",
+		"/F/coder/deployment/ploypex/candidates/views/steps.py",
+		"/F/coder/deployment/ploypex/candidates/extras.py",
+		"/F/coder/deployment/ploypex/requirements.txt",
+		"/F/coder/deployment/ploypex/roles/views/role_steps.py",
+		"/F/coder/deployment/ploypex/.ebextensions/04_packages.config",
+		"/F/coder/deployment/ploypex/ploypex/settings/__init__.py",
+		"/F/coder/deployment/ploypex/roles/urls.py",
+		"/F/coder/deployment/ploypex/candidates/forms.py",
+		"/F/coder/deployment/ploypex/notifications/tasks.py",
+		"/F/coder/deployment/ploypex/notifications/models.py",
+		"/F/coder/deployment/ploypex/templates/notifications/emails/email.html",
+		"/F/coder/deployment/ploypex/candidates/tasks.py",
+		"/F/coder/deployment/ploypex/notifications/signals.py",
+		"/F/coder/deployment/ploypex/templates/notifications/list.html",
+		"/F/coder/deployment/ploypex/notifications/templatetags/notifications_tags.py",
+		"/F/coder/Notifications/templates/blogs/home.html",
+		"/F/coder/Notifications/templates/notifications/notice.html",
+		"/F/coder/deployment/ploypex/templates/notifications/emails/notification_email.html",
+		"/F/coder/deployment/ploypex/templates/notifications/notification_list.html",
+		"/F/coder/deployment/ploypex/templates/notifications/notice.html",
+		"/F/coder/Notifications/templates/notifications/home.html",
+		"/F/coder/Notifications/boilerplate/settings.py",
+		"/F/coder/deployment/ploypex/ploypex/settings/base.py",
+		"/F/coder/deployment/src/ploypex/settings/base.py",
+		"/F/coder/deployment/ploypex/ipython_req.txt",
+		"/F/coder/deployment/ploypex/new_req.txt",
+		"/F/coder/deployment/ploypex/ploypex/settings/production.py"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 622.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 33.0
+	},
+	"input":
+	{
+		"height": 129.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 210.0
+	},
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 197.0
+	},
+	"output.find_results":
+	{
+		"height": 210.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "try-react.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"trydjango19_blog\\django_blog\\posts\\forms.py"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 362.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				".accordion"
+			]
+		],
+		"width": 578.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 190.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
