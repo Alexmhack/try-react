@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# sublime text project
+try-react.sublime-project
+try-react.sublime-workspace
