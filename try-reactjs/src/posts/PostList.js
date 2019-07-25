@@ -11,8 +11,12 @@ class PostList extends Component {
 		}
 	}
 
-	handleDataCallback (msg) {
-		console.log(msg)
+	handleDataCallback (postItem) {
+		let currentPostList = this.state.postList
+		currentPostList.push(postItem)  // pushing data received on clicking title from PostDetail
+		this.setState({
+			postList: currentPostList // setting the whole list to new pushed list
+		})
 	}
 
 	componentDidMount () {

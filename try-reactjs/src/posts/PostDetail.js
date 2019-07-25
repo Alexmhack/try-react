@@ -29,7 +29,9 @@ class PostDetail extends Component {
 			postItem: newPostItem
 		})
 
-		dataCallback(newPostItem)
+		if (dataCallback !== undefined) {
+			dataCallback(newPostItem)
+		}
 	}
 
 	// called before rendering component (predefined method)
