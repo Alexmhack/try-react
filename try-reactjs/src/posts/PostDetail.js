@@ -20,7 +20,25 @@ class PostDetail extends Component {
 
 	titleWasClicked (event) {
 		const {dataCallback} = this.props
-		dataCallback('Hello world')
+
+		// setting postItem to a new object, only changing title 
+		const newPostItem = {
+			title: 'Changing the title using the button and state',
+			content: this.props.post.content
+		}
+		this.setState({
+			postItem: newPostItem
+		})
+		
+		dataCallback(newPostItem)
+	}
+
+	// called before rendering component (predefined method)
+	componentDidMount () {
+		const {post} = this.props
+		this.setState({
+			postItem: post
+		})
 	}
 
 	render () {
