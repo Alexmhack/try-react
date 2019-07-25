@@ -6,8 +6,8 @@ function PostList () {
   return (
 	<div >
 		<h1>Posts are apppearing below.</h1>
-		{PostData.map((postDetail, index) => {
-			return <PostDetail post={postDetail} />
+		{PostData.map((item, index) => {
+			return <PostDetail post={item} key={`post-list-key ${index}`} />
 		})}
 	</div>
   )
