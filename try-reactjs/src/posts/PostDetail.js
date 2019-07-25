@@ -22,14 +22,13 @@ class PostDetail extends Component {
 		const {dataCallback} = this.props
 
 		// setting postItem to a new object, only changing title 
-		const newPostItem = {
-			title: 'Changing the title using the button and state',
-			content: this.props.post.content
-		}
+		let newPostItem = this.props.post
+		newPostItem['title'] = 'Changing the title using the button and state'
+
 		this.setState({
 			postItem: newPostItem
 		})
-		
+
 		dataCallback(newPostItem)
 	}
 
