@@ -54,3 +54,148 @@ function App () {
 
 Now if your server is running checkout your browser or start it with `npm start`. You should 
 see you `PostList` content rendered on the page.
+
+### Components
+By default the current version of npx creates a react app with functions and not classes
+so to convert them into classes extending or basically inheriting classes you need,
+
+```
+import React, { Component } from 'react'
+
+class ExampleClass extends Component {
+	render () {
+		return (
+			<div >
+				<h1>Hello from React.</h1>
+			</div>
+		)
+	}
+}
+
+export default ExampleClass
+```
+
+Now since we are using Component class we can use the `this` keyword for referencing 
+**props** and **state** and other method of a component class.
+
+Component class also has a `constructor` which is called at the very first when the class is
+initiated and the method `render` is called at the last which renders the component in the
+webpage. Constructor takes the props as the argument.
+
+### States
+With the help of states in React we can easily store data and render it from our component.
+Remember state belongs to a particular component and every component has its own.
+
+You can define the state inside the `constructor`, using
+```
+...
+class PostDetail extends Component {
+	constructor (props) {
+		// needed for initializing other props (properties)
+		super(props)
+
+		this.state = {
+			postItem: null
+		}
+	}
+}
+...
+```
+
+Now to set the state we have a predefined method, `setState` which is called using,
+
+```
+...
+const newItem = {
+	title: 'New title'
+}
+this.setState({
+	postItem: newItem
+})
+...
+```
+
+Now on accessing the `postItem` from state we get the object `newItem`.
+
+To access the `postItem` you have two ways,
+
+```
+// this maps the postItem from state automatically
+const {postItem} = this.state
+
+
+// or you can also use dot notation
+const item = this.state.postItem
+```
+
+### Props
+We can define our custom properties or props by simply,
+
+```
+...
+	handleDataCallback (header) {
+		console.log(header)
+	}
+...
+	render () {
+		return (
+			<div>
+				{postItem !== null ? 
+					<div >
+						<h2 dataCallback={this.handleDataCallback}>Hello World</h2>
+					</div>
+				: ''}
+			</div>
+		)
+	}
+```
+
+We can store values inside props and render them using html.
+
+Take another example using our source code context for posts,
+
+In **posts/PostList.js** we have imported **PostDetail** and pass in the props
+with key **post** and value of the current item that we map from the json data.
+
+In **posts/PostDetail.js** we simple access the **post** using, `const {post} = this.props`
+or we can also use `const post = this.props.post`.
+
+### Events
+Just like vanilla javascript has `onclick=somefunc()`, React uses somewhat similar,
+`onClick={this.handleButtonCallback}`, for example
+
+```
+<button onClick={this.handleButtonCallback}></button>
+```
+
+Now in your component you need to define this callback,
+
+```
+class PostDetail extends Component {
+	...
+
+	handleButtonCallback (event) {
+		event.preventDefault()	// prevents the default behaviour of a button
+		// set or change state or update backend using api or something else
+	}
+	...
+}
+```
+
+When you call `event.preventDefault()` the *event.target* or accessing *event* does not
+work, so for that we need to bind this callback inside our constructor using,
+
+```
+	constructor (props) {
+		super(props)
+
+		// binding enables accessing the props in methods (eventpreventDefault removes this)
+		this.handleButtonCallback = this.handleButtonCallback.bind(this)
+	}
+```
+
+Now we can simply use `this.props.someValue` inside our callback method.
+
+### Component Methods
+**componentDidMount** is a predefined method which is called before the component is 
+rendered.
