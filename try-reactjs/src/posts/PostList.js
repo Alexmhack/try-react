@@ -38,12 +38,19 @@ class PostList extends Component {
 		})
 	}
 
+	toggleListReverse() {
+		this.setState({
+			postList: this.state.postList.reverse()
+		})
+	}
+
 	render () {
 		// const {postList} = this.state
 
 	  return (
 		<div >
 			<h1>Posts are apppearing below.</h1>
+			<button onClick={this.his.state.postList.reverse()}>Reverse Order</button>
 			{this.state.postList.map((item, index) => {
 				return <PostDetail
 					post={item}
