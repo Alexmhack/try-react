@@ -7,7 +7,8 @@ class PostDetail extends Component {
 	}
 
 	titleWasClicked (event) {
-		console.log(this.props)
+		const {dataCallback} = this.props
+		dataCallback('Hello world')
 	}
 
 	render () {
