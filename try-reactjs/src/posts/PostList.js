@@ -32,16 +32,21 @@ class PostList extends Component {
 		})
 	}
 
-	componentDidMount () {
+	setPostStateOnProps () {
+		const {post} = this.props
 		this.setState({
-			postList: PostData  // use state for showing posts data
+			postItem: post
 		})
 	}
 
-	toggleListReverse() {
-		this.setState({
-			postList: this.state.postList.reverse()
-		})
+	componentDidUpdate (prevProps, prevState, snapShot) {
+		if (this.props !== prevProps) {
+			this.setPostStateOnProps()
+		}
+	}
+
+	componentDidMount () {
+		this.setPostStateOnProps()
 	}
 
 	render () {
@@ -50,7 +55,6 @@ class PostList extends Component {
 	  return (
 		<div >
 			<h1>Posts are apppearing below.</h1>
-			<button onClick={this.his.state.postList.reverse()}>Reverse Order</button>
 			{this.state.postList.map((item, index) => {
 				return <PostDetail
 					post={item}
