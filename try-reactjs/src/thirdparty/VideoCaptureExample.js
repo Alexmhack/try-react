@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import MediaCapture from 'react-multimedia-capture'
+import MediaCapturer from 'react-multimedia-capture'
 
 class VideoCaptureExample extends Component {
 	render () {
