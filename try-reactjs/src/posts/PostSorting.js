@@ -6,20 +6,22 @@ class PostSorting extends Component {
 	constructor (props) {
 		super(props)
 
-		this.toggleListReverse = this.toggleListReverse.bind(this)
+		// this.toggleListReverse = this.toggleListReverse.bind(this)
+		// this.toggleListByDate = this.toggleListByDate.bind(this)
 		this.state = {
-			postList: []
+			postList: [],
+			isOldestFirst: true
 		}
 	}
 
-	componentDidMount () {
+	componentDidMount = () => {
 		this.setState({
-			postList: PostData
+			postList: PostData,
+			isOldestFirst: true
 		})
 	}
 
-	toggleListReverse (event) {
-		event.preventDefault()
+	toggleListReverse = (event) => {
 		const {postList} = this.state
 		let newPostList = postList.reverse()
 		console.log(newPostList)

@@ -5,30 +5,31 @@ class PostDetail extends Component {
 		super(props)
 
 		// binding gives the props to methods (eventpreventDefault removes this)
-		this.titleWasClicked = this.titleWasClicked.bind(this)
-		this.toggleContent = this.toggleContent.bind(this)
-		this.handleRemoveContentButton = this.handleRemoveContentButton.bind(this)
+		// this.titleWasClicked = this.titleWasClicked.bind(this)
+		// this.toggleContent = this.toggleContent.bind(this)
+		// this.handleRemoveContentButton = this.handleRemoveContentButton.bind(this)
+
 		this.state = { // state belongs to this component
 			showContent: true,
 			postItem: null
 		}
 	}
 
-	handleRemoveContentButton (event) {
+	handleRemoveContentButton = (event) => {
 		event.preventDefault()
 		if (this.props.didHandleRemove) {
 			this.props.didHandleRemove(this.props.post)
 		}
 	}
 
-	toggleContent (event) {
+	toggleContent = (event) => {
 		event.preventDefault()
 		this.setState({
 			showContent: !this.state.showContent	// not the current showContent state value
 		})
 	}
 
-	titleWasClicked (event) {
+	titleWasClicked = (event) => {
 		const {dataCallback} = this.props
 
 		// setting postItem to a new object, only changing title 
@@ -44,7 +45,7 @@ class PostDetail extends Component {
 		}
 	}
 
-	setPostStateOnProps () {
+	setPostStateOnProps = (event) => {
 		const {post} = this.props
 		this.setState({
 			postItem: post
@@ -72,7 +73,7 @@ class PostDetail extends Component {
 				{postItem !== null ? 
 					<div >
 						<h2 onClick={this.titleWasClicked}>{postItem.title}</h2>
-						{showContent === true ? <p>{postItem.content}</p> : ""}
+						{showContent === true ? <p>{postItem.content}<br/><small>{postItem.date}</small></p> : ""}
 						<button onClick={this.toggleContent}>Toggle Content</button>
 						<button onClick={this.handleRemoveContentButton}>Remove Content</button>
 					</div>

@@ -5,26 +5,27 @@ import PostDetail from './PostDetail'
 class PostList extends Component {
 	constructor (props) {
 		super(props)
-		this.handleDataCallback = this.handleDataCallback.bind(this)
-		this.handlePostRemove = this.handlePostRemove.bind(this)
+		// this.handleDataCallback = this.handleDataCallback.bind(this)
+		// this.handlePostRemove = this.handlePostRemove.bind(this)
+
 		this.state = {
 			postList: []
 		}
 	}
 
-	updateBackend (currentPostList) {
+	updateBackend = (currentPostList) => {
 		this.setState({
 			postList: currentPostList
 		})
 	}
 
-	handlePostRemove (postItem) {
+	handlePostRemove = (postItem) => {
 		let currentPostList = this.state.postList
 		this.updateBackend(currentPostList)
 		currentPostList.pop(postItem)
 	}
 
-	handleDataCallback (postItem) {
+	handleDataCallback = (postItem) => {
 		let currentPostList = this.state.postList
 		currentPostList.push(postItem)  // pushing data received on clicking title from PostDetail
 		this.setState({
@@ -32,7 +33,7 @@ class PostList extends Component {
 		})
 	}
 
-	setPostStateOnProps () {
+	setPostStateOnProps = (event) => {
 		const {post} = this.props
 		this.setState({
 			postItem: post
