@@ -30,10 +30,31 @@ class PostSorting extends Component {
 		})
 	}
 
-	render () {
+	sortByDate = (event) => {
+		const {postList} = this.state
+		let newPostList = postList
+
+		if (this.state.isOldestFirst) {
+			newPostList.sort((a, b) => a.date > b.date)
+		} else {
+			newPostList.sort((a, b) => a.date < b.date)
+		}
+		
+		this.setState({
+			postList: newPostList,
+			isOldestFirst: !this.state.isOldestFirst
+		})
+	}
+
+	toggleListByDate = (event) => {
+		this.sortByDate()
+	}
+
+	render = (event) => {
 		return (
 			<div>
 				<button onClick={this.toggleListReverse}>Reverse Order</button>
+				<button onClick={this.toggleListByDate}>Sort By Date</button>
 				<h1>Posts are apppearing below.</h1>
 				{this.state.postList.map((item, index) => {
 					return <PostDetail
