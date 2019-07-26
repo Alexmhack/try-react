@@ -44,12 +44,22 @@ class PostDetail extends Component {
 		}
 	}
 
-	// called before rendering component (predefined method)
-	componentDidMount () {
+	setPostStateOnProps () {
 		const {post} = this.props
 		this.setState({
 			postItem: post
 		})
+	}
+
+	// called before rendering component (predefined method)
+	componentDidMount () {
+		this.setPostStateOnProps()
+	}
+
+	componentDidUpdate (prevProps, prevState, snapShot) {
+		if (prevProps !== this.props) {
+			this.setPostStateOnProps()
+		}
 	}
 
 	render () {
