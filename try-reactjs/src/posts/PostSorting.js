@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PostData from '../data/posts.json'
+import PostDetail from './PostDetail'
 
 class PostSorting extends Component {
 	constructor (props) {
@@ -18,6 +19,7 @@ class PostSorting extends Component {
 	}
 
 	toggleListReverse (event) {
+		event.preventDefault()
 		const {postList} = this.state
 		let newPostList = postList.reverse()
 		console.log(newPostList)
