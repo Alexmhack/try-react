@@ -5,21 +5,38 @@ class Timer extends Component {
 		super(props)
 
 		this.state = {
-			count: 0
+			count: 100
 		}
 	}
 
-	componentDidMount () {
+	resetCount = () => {
+		const {startCount} = this.props
+		clearInterval(this.myInterval)
+		this.setState({
+			count: startCount
+		})
+	}
+
+	startCounter = () => {
 		this.myInterval = setInterval(() => {
 			this.setState(prevState => ({
-				count: prevState.count + 1
+				count: prevState.count - 1
 			}))
 		}, 1000)
 	}
 
+	componentDidMount () {
+		const {startCount} = this.props
+		this.setState({
+			count: startCount
+		})
+
+		this.startCounter()
+	}
+
 	componentWillUnmount() {
 		// clear the interval in case of memory leaks
-		clearInterval(this.myInterval)
+		this.resetCount()
 	}
 
 	render () {
@@ -27,6 +44,8 @@ class Timer extends Component {
 		return (
 			<div>
 				<h1>Current Count: {count}</h1>
+				<button onClick={this.resetCount}>Reset</button>
+				<button onClick={this.startCounter}>Start</button>
 			</div>
 		)
 	}
