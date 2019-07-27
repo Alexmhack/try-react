@@ -1,5 +1,24 @@
 import React, { Component } from 'react'
 
+function InputElement (props) {
+	function handleChange (event) {
+		if (props.onChange) props.onChange(event)
+	}
+
+	return (
+		<div>
+			<input
+				ref={props.inputRef}
+				name={props.name}
+				type={props.type}
+				value={props.value}
+				placeholder={props.placeholder}
+				onChange={handleChange}
+			/>
+		</div>
+	)
+}
+
 class FormsAndInput extends Component {
 	constructor (props) {
 		super(props)
@@ -53,6 +72,7 @@ class FormsAndInput extends Component {
 				<form action='.' method='POST' onSubmit={this.handleSubmit}>
 					<input ref={this.inputFullNameRef} type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name' /><br />
 					<textarea required={true} ref={node => this.inputContentRef = node} placeholder='Type your content'></textarea><br />
+					<InputElement name='email' type='email' placeholder='Your email' inputRef={node => this.inputElementRef = node} /><br />
 					<button type='submit'>Save</button><br />
 					<button onClick={this.handleFocusClick} type='submit'>Focus</button><br />
 					<button onClick={this.handleClearClick} type='submit'>Clear</button><br />
