@@ -6,6 +6,7 @@ class FormsAndInput extends Component {
 		this.state = {
 			fullName: null
 		}
+		this.inputFullNameRef = React.createRef()
 	}
 
 	handleSubmit = (event) => {
@@ -27,6 +28,8 @@ class FormsAndInput extends Component {
 		this.setState({
 			fullName: 'Pranav'
 		})
+
+		this.inputFullNameRef.current.focus()
 	}
 
 	render () {
@@ -36,7 +39,7 @@ class FormsAndInput extends Component {
 				<h1>Forms and Input</h1>
 				<p>Full Name: {fullName}</p>
 				<form action='.' method='POST' onSubmit={this.handleSubmit}>
-					<input type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input>
+					<input ref={this.inputFullNameRef} type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input>
 					<button type='submit'>Save</button>
 				</form>
 			</div>
