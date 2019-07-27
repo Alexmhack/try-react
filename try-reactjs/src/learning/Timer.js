@@ -12,7 +12,7 @@ class Timer extends Component {
 	componentDidMount () {
 		const myInterval = setInterval(() => {
 			this.setState(prevState => ({
-				count: this.state.count + 1
+				count: prevState.count + 1
 			}))
 		}, 1000)
 	}
