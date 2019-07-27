@@ -9,18 +9,17 @@ class FormsAndInput extends Component {
 	}
 
 	handleSubmit = (event) => {
-		console.log(event)
 		event.preventDefault()
+		const data = this.state
+		console.log(data)
 	}
 
 	handleInputChange = (event) => {
-		console.log(event)
-		console.log(event.target.name)
-		console.log(event.target.value)
 		event.preventDefault()
 
 		this.setState({
-			fullName: event.target.value
+			// using square brackets we can set key value pairs, for example here 'fullName'
+			[event.target.name]: event.target.value
 		})
 	}
 
