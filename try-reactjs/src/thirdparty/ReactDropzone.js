@@ -8,12 +8,12 @@ class ReactDropzone extends Component {
 	}
 
 	render () {
-		const maxFileSize = 10
-		
+		const maxFileSize = 1000000000000000000000000
+
 		return (
 			<div>
 				<h1>Drag and drop</h1>
-				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize}>
+				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={true}>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
 				      <div {...getRootProps()}>
