@@ -15,7 +15,7 @@ function App () {
   return (
     <div className='App'>
       <header className='App-header'>
-      	<Timer />
+      	<Timer startCount='50'/>
       </header>
     </div>
   )
