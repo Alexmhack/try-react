@@ -4,7 +4,7 @@ class FormsAndInput extends Component {
 	constructor (props) {
 		super(props)
 		this.state = {
-			fullName: null
+			fullName: 'Pranav Singh Gour'
 		}
 	}
 
@@ -31,7 +31,7 @@ class FormsAndInput extends Component {
 				<h1>Forms and Input</h1>
 				<p>Full Name: {fullName}</p>
 				<form action='.' method='POST' onSubmit={this.handleSubmit}>
-					<input type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input>
+					<input type='text' name='fullName' value={fullName} onChange={this.handleInputChange} placeholder='Your Name'></input>
 					<button type='submit'>Save</button>
 				</form>
 			</div>
