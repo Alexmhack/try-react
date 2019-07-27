@@ -2,15 +2,18 @@ import React, { Component } from 'react'
 import Dropzone from 'react-dropzone'
 
 class ReactDropzone extends Component {
-	handleOnDrop = (files) => {
+	handleOnDrop = (files, rejectedFiles) => {
 		console.log(files)
+		console.log(rejectedFiles)
 	}
 
 	render () {
+		const maxFileSize = 10
+		
 		return (
 			<div>
 				<h1>Drag and drop</h1>
-				<Dropzone onDrop={this.handleOnDrop}>
+				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize}>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
 				      <div {...getRootProps()}>
