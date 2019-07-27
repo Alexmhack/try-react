@@ -37,6 +37,10 @@ class FormsAndInput extends Component {
 		this.inputFullNameRef.current.focus()
 	}
 
+	handleClearClick = () => {
+		this.inputFullNameRef.current.value = ''
+	}
+
 	render () {
 		const {fullName} = this.state
 		return (
@@ -47,6 +51,7 @@ class FormsAndInput extends Component {
 					<input ref={this.inputFullNameRef} type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input>
 					<button type='submit'>Save</button>
 					<button onClick={this.handleFocusClick} type='submit'>Focus</button>
+					<button onClick={this.handleClearClick} type='submit'>Clear</button>
 				</form>
 			</div>
 		)
