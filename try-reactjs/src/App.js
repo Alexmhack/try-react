@@ -5,7 +5,7 @@ import React from 'react'
 // import ReactMarkdownExample from './thirdparty/ReactMarkdownExample'
 // import Timer from './learning/Timer'
 // import VideoCaptureExample from './thirdparty/VideoCaptureExample'
-import VideoRecorderExample from './thirdparty/VideoCaptureExample'
+import VideoRecorderExample from './thirdparty/VideoRecorderExample'
 
 // <ReactYoutubeExample videoId='_nBlN9yp9R8' />
 // <PostList />
