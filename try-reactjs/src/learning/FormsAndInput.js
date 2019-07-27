@@ -29,6 +29,10 @@ class FormsAndInput extends Component {
 			fullName: 'Pranav'
 		})
 
+		// this.inputFullNameRef.current.focus()
+	}
+
+	handleFocusClick = () => {
 		this.inputFullNameRef.current.focus()
 	}
 
@@ -41,6 +45,7 @@ class FormsAndInput extends Component {
 				<form action='.' method='POST' onSubmit={this.handleSubmit}>
 					<input ref={this.inputFullNameRef} type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input>
 					<button type='submit'>Save</button>
+					<button onClick={this.handleFocusClick} type='submit'>Focus</button>
 				</form>
 			</div>
 		)
