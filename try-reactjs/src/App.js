@@ -7,6 +7,7 @@ import React from 'react'
 // import VideoCaptureExample from './thirdparty/VideoCaptureExample'
 // import VideoRecorderExample from './thirdparty/VideoRecorderExample'
 // import AlertBox, { WelcomeDialog } from './learning/ParentWrapper'
+import FormsAndInput from './learning/FormsAndInput'
 
 // <ReactYoutubeExample videoId='_nBlN9yp9R8' />
 // <PostList />
@@ -22,7 +23,7 @@ function App () {
   return (
     <div className='App'>
       <header className='App-header'>
-
+      	<FormsAndInput />
       </header>
     </div>
   )
