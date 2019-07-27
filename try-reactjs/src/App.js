@@ -6,7 +6,7 @@ import React from 'react'
 // import Timer from './learning/Timer'
 // import VideoCaptureExample from './thirdparty/VideoCaptureExample'
 // import VideoRecorderExample from './thirdparty/VideoRecorderExample'
-import ParentWrapper from './learning/ParentWrapper'
+import AlertBox, { WelcomeDialog } from './learning/ParentWrapper'
 
 // <ReactYoutubeExample videoId='_nBlN9yp9R8' />
 // <PostList />
@@ -16,9 +16,11 @@ function App () {
   return (
     <div className='App'>
       <header className='App-header'>
-      	<ParentWrapper alertType='danger'>
+      	<AlertBox alertType='danger'>
       		We have got some notifications to show.
-      	</ParentWrapper>
+      	</AlertBox>
+
+      	<WelcomeDialog />
       </header>
     </div>
   )
