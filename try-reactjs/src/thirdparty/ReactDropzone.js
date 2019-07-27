@@ -11,8 +11,15 @@ class ReactDropzone extends Component {
 		return (
 			<div>
 				<h1>Drag and drop</h1>
-				<Dropzone onDrop={this.handleOnDrop}>
-					Drag and drop your files here
+				<Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+				  {({getRootProps, getInputProps}) => (
+				    <section>
+				      <div {...getRootProps()}>
+				        <input {...getInputProps()} />
+				        <p>Drag 'n' drop some files here, or click to select files</p>
+				      </div>
+				    </section>
+				  )}
 				</Dropzone>
 			</div>
 		)
