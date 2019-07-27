@@ -39,6 +39,9 @@ class FormsAndInput extends Component {
 
 	handleClearClick = () => {
 		this.inputFullNameRef.current.value = ''
+		this.setState({
+			fullName: ''
+		})
 	}
 
 	render () {
