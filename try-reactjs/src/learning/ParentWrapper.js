@@ -9,4 +9,8 @@ class ParentWrapper extends Component {
 	}
 }
 
-export default ParentWrapper
+function AlertBox (props) {
+	return <div className={'alert alert-' + props.alertType}>{props.children}</div>
+}
+
+export default AlertBox
