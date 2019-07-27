@@ -2,16 +2,15 @@ import React, { Component } from 'react'
 import Dropzone from 'react-dropzone'
 
 class ReactDropzone extends Component {
-	handleOnDrop = (files, rejectedFiles) => {
+	handleOnDrop = (files) => {
 		console.log(files)
-		console.log(rejectedFiles)
 	}
 
 	render () {
 		return (
 			<div>
 				<h1>Drag and drop</h1>
-				<Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+				<Dropzone onDrop={this.handleOnDrop}>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
 				      <div {...getRootProps()}>
