@@ -11,8 +11,9 @@ class FormsAndInput extends Component {
 
 	handleSubmit = (event) => {
 		event.preventDefault()
-		const data = this.state
-		console.log(data)
+		// const data = this.state
+		// console.log(data)
+		console.log(this.inputFullNameRef.current.value)
 	}
 
 	handleInputChange = (event) => {
@@ -29,7 +30,7 @@ class FormsAndInput extends Component {
 			fullName: 'Pranav'
 		})
 
-		// this.inputFullNameRef.current.focus()
+		this.inputFullNameRef.current.focus()
 	}
 
 	handleFocusClick = () => {
