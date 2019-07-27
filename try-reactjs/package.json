@@ -11,6 +11,7 @@
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
+    "react-video-recorder": "^3.10.0",
     "react-youtube": "^7.9.0",
     "undefined": "^0.1.0",
     "whatwg-fetch": "^3.0.0"
