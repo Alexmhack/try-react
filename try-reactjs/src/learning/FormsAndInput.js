@@ -51,10 +51,11 @@ class FormsAndInput extends Component {
 				<h1>Forms and Input</h1>
 				<p>Full Name: {fullName}</p>
 				<form action='.' method='POST' onSubmit={this.handleSubmit}>
-					<input ref={this.inputFullNameRef} type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input>
-					<button type='submit'>Save</button>
-					<button onClick={this.handleFocusClick} type='submit'>Focus</button>
-					<button onClick={this.handleClearClick} type='submit'>Clear</button>
+					<input ref={this.inputFullNameRef} type='text' name='fullName' onChange={this.handleInputChange} placeholder='Your Name'></input><br />
+					<textarea required={true} ref={node => this.inputContentRef = node} placeholder='Type your content'></textarea><br />
+					<button type='submit'>Save</button><br />
+					<button onClick={this.handleFocusClick} type='submit'>Focus</button><br />
+					<button onClick={this.handleClearClick} type='submit'>Clear</button><br />
 				</form>
 			</div>
 		)
