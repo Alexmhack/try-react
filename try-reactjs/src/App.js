@@ -6,21 +6,23 @@ import React from 'react'
 // import Timer from './learning/Timer'
 // import VideoCaptureExample from './thirdparty/VideoCaptureExample'
 // import VideoRecorderExample from './thirdparty/VideoRecorderExample'
-import AlertBox, { WelcomeDialog } from './learning/ParentWrapper'
+// import AlertBox, { WelcomeDialog } from './learning/ParentWrapper'
 
 // <ReactYoutubeExample videoId='_nBlN9yp9R8' />
 // <PostList />
 // <ReactMarkdownExample />
 // <Timer startCount='50'/>
+// <AlertBox alertType='danger'>
+// 	We have got some notifications to show.
+// </AlertBox>
+// <WelcomeDialog />
+
+        
 function App () {
   return (
     <div className='App'>
       <header className='App-header'>
-      	<AlertBox alertType='danger'>
-      		We have got some notifications to show.
-      	</AlertBox>
 
-      	<WelcomeDialog />
       </header>
     </div>
   )
