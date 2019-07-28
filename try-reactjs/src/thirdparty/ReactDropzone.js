@@ -40,14 +40,27 @@ class ReactDropzone extends Component {
 
 	handleOnDrop = (files, rejectedFiles) => {
 		if (files && files.length > 0) {
-			this.checkFileSize(files)
+			const isVerified = this.checkFileSize(files)
+			if (isVerified) {
+				const imageReader = new FileReader()
+				imageReader.addEventListener('load', () => {
+					console.log(imageReader.result)
+
+					this.setState({
+						imgSrc: imageReader.result
+					})
+				}, false)
+
+				// we can remove the for loop since we are only accepting one file => files[0] will work
+				for (var i = 0; i < files.length; i++) {
+					imageReader.readAsDataURL(files[i])
+				}
+
+			}
 		}
 
 		if (rejectedFiles && rejectedFiles > 0) {
-			const isVerified = this.checkFileSize(rejectedFiles)
-			if (isVerified) {
-				console.log('Files are verified')
-			}
+			this.checkFileSize(rejectedFiles)
 		}
 	}
 
@@ -58,7 +71,7 @@ class ReactDropzone extends Component {
 		return (	
 			<div>
 				<h1>Drag and drop</h1>
-				{imgSrc !== null ? <img src={imgSrc} /> : ''}
+				{imgSrc !== null ? <img src={imgSrc} alt='Preview from dropzone' /> : ''}
 				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
