@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Dropzone from 'react-dropzone'
 import ReactCrop from 'react-image-crop'
 import 'react-image-crop/dist/ReactCrop.css'
-import { image64toCanvasRef } from '../learning/ReusableUtils'
+import { image64toCanvasRef, extractImageFileExtensionFromBase64,
+	base64StringtoFile, downloadBase64File } from '../learning/ReusableUtils'
 
 const acceptedFileTypes = 'image/png, image/x-png, image/jpg, image/jpeg, image/gif'
 const acceptedFileTypesArray = acceptedFileTypes.split(',').map((item) => { return item.trim() })
@@ -16,6 +17,7 @@ class ReactDropzone extends Component {
 		this.state = {
 			maxFileSize: 1000000000000000000,
 			imgSrc: null,
+			imgSrcExt: null,
 			crop: {
 				aspect: 1/1
 			}
@@ -52,10 +54,10 @@ class ReactDropzone extends Component {
 			if (isVerified) {
 				const imageReader = new FileReader()
 				imageReader.addEventListener('load', () => {
-					console.log(imageReader.result)
-
+					const image = imageReader.result
 					this.setState({
-						imgSrc: imageReader.result
+						imgSrc: image,
+						imgSrcExt: extractImageFileExtensionFromBase64(image)
 					})
 				}, false)
 
@@ -73,10 +75,52 @@ class ReactDropzone extends Component {
 	}
 
 	handleCropChange = (crop) => {
-		console.log(crop)
 		this.setState({
 			crop: crop
 		})
+	}
+
+	handleImageLoaded = (image) => {
+		// nothing here
+	}
+
+	handleImageCropComplete = (crop, pixelCrop) => {
+		const canvasRef = this.imagePreviewCanvasRef.current
+		const {imgSrc} = this.state
+
+		if (pixelCrop.width && pixelCrop.height) image64toCanvasRef(canvasRef, imgSrc, pixelCrop)
+	}
+
+	handleDownloadButton = (event) => {
+		event.preventDefault()
+		// const canvasRef = this.imagePreviewCanvasRef.current
+		const {imgSrc} = this.state
+		const {imgSrcExt} = this.state
+		const previewFileName = 'PreviewImage.' +  imgSrcExt
+
+		// file to be uploaded
+		const croppedFile = base64StringtoFile(imgSrc, previewFileName)
+		downloadBase64File(imgSrc, previewFileName)
+	}
+
+	handleClearToDefault = (event) => {
+		event.preventDefault()
+		const canvas = this.imagePreviewCanvasRef.current
+		const ctx = canvas.getContext('2d')
+		ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+		this.setState({
+			maxFileSize: 1000000000000000000,
+			imgSrc: null,
+			imgSrcExt: null,
+			crop: {
+				aspect: 1/1
+			}
+		})
+	}
+
+	handleFileSelect = (event) => {
+		console.log(event)
 	}
 
 	render () {
@@ -87,16 +131,24 @@ class ReactDropzone extends Component {
 		return (	
 			<div>
 				<h1>Drag and drop</h1>
+				<input type='file' name='file' accept={acceptedFileTypes} onChange={this.handleFileSelect}
+					multiple={false}
+				/>
 				{imgSrc !== null ? 
 					<div>
 				    <ReactCrop
 				      src={imgSrc}
 				      crop={crop}
 				      onChange={this.handleCropChange}
+				      onImageLoaded={this.handleImageLoaded}
+				      onComplete={this.handleImageCropComplete}
 				    />
 
 				    <br />
+				    <p>Preview Canvas Crop </p>
 				    <canvas ref={this.imagePreviewCanvasRef}></canvas>
+				    <button onClick={this.handleDownloadButton}>Download</button>
+				    <button onClick={this.handleClearToDefault}>Clear</button>
 					</div> : 
 					<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
 					  {({getRootProps, getInputProps}) => (
