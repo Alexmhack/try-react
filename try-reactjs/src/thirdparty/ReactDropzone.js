@@ -71,17 +71,18 @@ class ReactDropzone extends Component {
 		return (	
 			<div>
 				<h1>Drag and drop</h1>
-				{imgSrc !== null ? <img src={imgSrc} alt='Preview from dropzone' /> : ''}
-				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
-				  {({getRootProps, getInputProps}) => (
-				    <section>
-				      <div {...getRootProps()}>
-				        <input {...getInputProps()} />
-				        <p>Drag 'n' drop some files here, or click to select files</p>
-				      </div>
-				    </section>
-				  )}
-				</Dropzone>
+				{imgSrc !== null ? <img src={imgSrc} alt='Preview from dropzone' /> : 
+					<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
+					  {({getRootProps, getInputProps}) => (
+					    <section>
+					      <div {...getRootProps()}>
+					        <input {...getInputProps()} />
+					        <p>Drag 'n' drop some files here, or click to select files</p>
+					      </div>
+					    </section>
+					  )}
+					</Dropzone>
+				}
 			</div>
 		)
 	}
