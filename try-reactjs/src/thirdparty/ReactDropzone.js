@@ -100,7 +100,7 @@ class ReactDropzone extends Component {
 		const previewFileName = 'PreviewImage.' +  imgSrcExt
 
 		// file to be uploaded
-		const croppedFile = base64StringtoFile(imgSrc, previewFileName)
+		// const croppedFile = base64StringtoFile(imgSrc, previewFileName)
 		downloadBase64File(imgSrc, previewFileName)
 	}
 
