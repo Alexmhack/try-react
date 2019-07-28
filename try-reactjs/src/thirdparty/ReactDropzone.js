@@ -13,6 +13,7 @@ class ReactDropzone extends Component {
 		super(props)
 
 		this.imagePreviewCanvasRef = React.createRef()
+		this.inputFileSelect = React.createRef()
 
 		this.state = {
 			maxFileSize: 1000000000000000000,
@@ -108,6 +109,7 @@ class ReactDropzone extends Component {
 		const canvas = this.imagePreviewCanvasRef.current
 		const ctx = canvas.getContext('2d')
 		ctx.clearRect(0, 0, canvas.width, canvas.height)
+		this.inputFileSelect.current.value = null
 
 		this.setState({
 			maxFileSize: 1000000000000000000,
@@ -120,7 +122,28 @@ class ReactDropzone extends Component {
 	}
 
 	handleFileSelect = (event) => {
-		console.log(event)
+		const file = event.target.files
+		if (file && file.length > 0) {
+			const {maxFileSize} = this.state
+
+			for (var i = 0; i < file.length; i++) {
+				const currentFile = file[i]
+				const currentFileSize = currentFile.size
+				const currentFileType = currentFile.type
+				if (currentFileSize > maxFileSize) {
+					alert(`File ${currentFile.name} is too big`)
+					return false
+				}
+
+				// check if accepted file types array includes the current file type
+				if (!acceptedFileTypesArray.includes(currentFileType)) {
+					alert('This file type is not accepted, only images are accepted')
+					return false
+				}
+			}
+
+			return true
+		}
 	}
 
 	render () {
@@ -131,7 +154,7 @@ class ReactDropzone extends Component {
 		return (	
 			<div>
 				<h1>Drag and drop</h1>
-				<input type='file' name='file' accept={acceptedFileTypes} onChange={this.handleFileSelect}
+				<input ref={this.inputFileSelect} type='file' name='file' accept={acceptedFileTypes} onChange={this.handleFileSelect}
 					multiple={false}
 				/>
 				{imgSrc !== null ? 
