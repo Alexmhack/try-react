@@ -8,7 +8,8 @@ import React from 'react'
 // import VideoRecorderExample from './thirdparty/VideoRecorderExample'
 // import AlertBox, { WelcomeDialog } from './learning/ParentWrapper'
 // import FormsAndInput from './learning/FormsAndInput'
-import ReactDropzone from './thirdparty/ReactDropzone'
+// import ReactDropzone from './thirdparty/ReactDropzone'
+import AppRoutingExample from './routingComps/AppRoutingExample'
 
 // <ReactYoutubeExample videoId='_nBlN9yp9R8' />
 // <PostList />
@@ -19,12 +20,12 @@ import ReactDropzone from './thirdparty/ReactDropzone'
 // </AlertBox>
 // <WelcomeDialog />
 // <FormsAndInput />
-        
+// <ReactDropzone />        
 function App () {
   return (
     <div className='App'>
       <header className='App-header'>
-      	<ReactDropzone />
+      	<AppRoutingExample />
       </header>
     </div>
   )
