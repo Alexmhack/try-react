@@ -6,20 +6,21 @@ class ReactDropzone extends Component {
 		super(props)
 
 		this.state = {
-			maxFileSize: 100000000000000000000
+			maxFileSize: 90
 		}
 	}
 
 	checkFileSize = (file) => {
 		if (file && file.length > 0) {
-			const currentFile = file[0]
-			const currentFileSize = currentFile.size
-			const currentFileType = currentFile.type
-
 			const {maxFileSize} = this.state
 
-			if (currentFileSize > maxFileSize) {
-				alert('File is too big')
+			for (var i = 0; i < file.length; i++) {
+				const currentFile = file[i]
+				const currentFileSize = currentFile.size
+				const currentFileType = currentFile.type
+				if (currentFileSize > maxFileSize) {
+					alert(`File ${currentFile.name} is too big`)
+				}
 			}
 		}
 	}
