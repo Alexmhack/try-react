@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Dropzone from 'react-dropzone'
 import ReactCrop from 'react-image-crop'
 import 'react-image-crop/dist/ReactCrop.css'
+import { image64toCanvasRef } from '../learning/ReusableUtils'
 
 const acceptedFileTypes = 'image/png, image/x-png, image/jpg, image/jpeg, image/gif'
 const acceptedFileTypesArray = acceptedFileTypes.split(',').map((item) => { return item.trim() })
@@ -9,6 +10,8 @@ const acceptedFileTypesArray = acceptedFileTypes.split(',').map((item) => { retu
 class ReactDropzone extends Component {
 	constructor (props) {
 		super(props)
+
+		this.imagePreviewCanvasRef = React.createRef()
 
 		this.state = {
 			maxFileSize: 1000000000000000000,
@@ -91,6 +94,9 @@ class ReactDropzone extends Component {
 				      crop={crop}
 				      onChange={this.handleCropChange}
 				    />
+
+				    <br />
+				    <canvas ref={this.imagePreviewCanvasRef}></canvas>
 					</div> : 
 					<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
 					  {({getRootProps, getInputProps}) => (
