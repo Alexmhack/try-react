@@ -9,7 +9,8 @@ class ReactDropzone extends Component {
 		super(props)
 
 		this.state = {
-			maxFileSize: 1000000000000000000
+			maxFileSize: 1000000000000000000,
+			imgSrc: null
 		}
 	}
 
@@ -46,6 +47,7 @@ class ReactDropzone extends Component {
 		return (
 			<div>
 				<h1>Drag and drop</h1>
+				{imgSrc !== null ? <img src={imgSrc} /> : ''}
 				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
