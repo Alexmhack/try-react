@@ -9,7 +9,7 @@ import React from 'react'
 // import AlertBox, { WelcomeDialog } from './learning/ParentWrapper'
 // import FormsAndInput from './learning/FormsAndInput'
 // import ReactDropzone from './thirdparty/ReactDropzone'
-import AppRoutingExample from './routingComps/AppRoutingExample'
+import AppRoutingExample from './routingComps/AppExample'
 
 // <ReactYoutubeExample videoId='_nBlN9yp9R8' />
 // <PostList />
