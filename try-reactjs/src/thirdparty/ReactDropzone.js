@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import Dropzone from 'react-dropzone'
+import ReactCrop from 'react-image-crop'
+import 'react-image-crop/dist/ReactCrop.css'
 
 const acceptedFileTypes = 'image/png, image/x-png, image/jpg, image/jpeg, image/gif'
 const acceptedFileTypesArray = acceptedFileTypes.split(',').map((item) => { return item.trim() })
@@ -10,7 +12,10 @@ class ReactDropzone extends Component {
 
 		this.state = {
 			maxFileSize: 1000000000000000000,
-			imgSrc: null
+			imgSrc: null,
+			crop: {
+				aspect: 16/9
+			}
 		}
 	}
 
@@ -64,14 +69,29 @@ class ReactDropzone extends Component {
 		}
 	}
 
+	handleCropChange = (crop) => {
+		console.log(crop)
+		this.setState({
+			crop: crop
+		})
+	}
+
 	render () {
 		const {maxFileSize} = this.state
 		const {imgSrc} = this.state
+		const {crop} = this.state
 
 		return (	
 			<div>
 				<h1>Drag and drop</h1>
-				{imgSrc !== null ? <img src={imgSrc} alt='Preview from dropzone' /> : 
+				{imgSrc !== null ? 
+					<div>
+				    <ReactCrop
+				      src={imgSrc}
+				      crop={crop}
+				      onChange={this.handleCropChange}
+				    />
+					</div> : 
 					<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
 					  {({getRootProps, getInputProps}) => (
 					    <section>
