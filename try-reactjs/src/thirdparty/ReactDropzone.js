@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import Dropzone from 'react-dropzone'
 
+const acceptedFileTypes = 'image/png, image/x-png, image/jpg, image/jpeg, image/gif'
+const acceptedFileTypesArray = acceptedFileTypes.split(',').map((item) => { return item.trim() })
+
 class ReactDropzone extends Component {
 	constructor (props) {
 		super(props)
 
 		this.state = {
-			maxFileSize: 90
+			maxFileSize: 1000000000000000000
 		}
 	}
 
@@ -20,6 +23,13 @@ class ReactDropzone extends Component {
 				const currentFileType = currentFile.type
 				if (currentFileSize > maxFileSize) {
 					alert(`File ${currentFile.name} is too big`)
+					return false
+				}
+
+				// check if accepted file types array includes the current file type
+				if (!acceptedFileTypesArray.includes(currentFileType)) {
+					alert('This file type is not accepted, only images are accepted')
+					return false
 				}
 			}
 		}
@@ -36,7 +46,7 @@ class ReactDropzone extends Component {
 		return (
 			<div>
 				<h1>Drag and drop</h1>
-				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept='image/*'>
+				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept={acceptedFileTypes}>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
 				      <div {...getRootProps()}>
