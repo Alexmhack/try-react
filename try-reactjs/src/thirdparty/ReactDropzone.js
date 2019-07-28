@@ -14,7 +14,7 @@ class ReactDropzone extends Component {
 			maxFileSize: 1000000000000000000,
 			imgSrc: null,
 			crop: {
-				aspect: 16/9
+				aspect: 1/1
 			}
 		}
 	}
