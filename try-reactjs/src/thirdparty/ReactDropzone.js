@@ -33,18 +33,29 @@ class ReactDropzone extends Component {
 					return false
 				}
 			}
+
+			return true
 		}
 	}
 
 	handleOnDrop = (files, rejectedFiles) => {
-		this.checkFileSize(files)
-		this.checkFileSize(rejectedFiles)
+		if (files && files.length > 0) {
+			this.checkFileSize(files)
+		}
+
+		if (rejectedFiles && rejectedFiles > 0) {
+			const isVerified = this.checkFileSize(rejectedFiles)
+			if (isVerified) {
+				console.log('Files are verified')
+			}
+		}
 	}
 
 	render () {
 		const {maxFileSize} = this.state
+		const {imgSrc} = this.state
 
-		return (
+		return (	
 			<div>
 				<h1>Drag and drop</h1>
 				{imgSrc !== null ? <img src={imgSrc} /> : ''}
