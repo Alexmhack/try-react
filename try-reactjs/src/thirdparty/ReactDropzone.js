@@ -4,34 +4,29 @@ import Dropzone from 'react-dropzone'
 class ReactDropzone extends Component {
 	constructor (props) {
 		super(props)
-		
+
 		this.state = {
-			maxFileSize: 10
+			maxFileSize: 100000000000000000000
+		}
+	}
+
+	checkFileSize = (file) => {
+		if (file && file.length > 0) {
+			const currentFile = file[0]
+			const currentFileSize = currentFile.size
+			const currentFileType = currentFile.type
+
+			const {maxFileSize} = this.state
+
+			if (currentFileSize > maxFileSize) {
+				alert('File is too big')
+			}
 		}
 	}
 
 	handleOnDrop = (files, rejectedFiles) => {
-		if (files && files.length > 0) {
-			const currentFile = files[0]
-			const currentFileSize = currentFile.size
-			const currentFileType = currentFile.type
-			const {maxFileSize} = this.state
-
-			if (currentFileSize > maxFileSize) {
-				alert('File is too big')
-			}
-		}
-
-		if (rejectedFiles && rejectedFiles.length > 0) {
-			const currentFile = rejectedFiles[0]
-			const currentFileSize = currentFile.size
-			const currentFileType = currentFile.type
-			const {maxFileSize} = this.state
-
-			if (currentFileSize > maxFileSize) {
-				alert('File is too big')
-			}
-		}
+		this.checkFileSize(files)
+		this.checkFileSize(rejectedFiles)
 	}
 
 	render () {
