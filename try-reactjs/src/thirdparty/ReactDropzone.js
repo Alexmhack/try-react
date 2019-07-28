@@ -13,7 +13,7 @@ class ReactDropzone extends Component {
 		return (
 			<div>
 				<h1>Drag and drop</h1>
-				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={true}>
+				<Dropzone onDrop={this.handleOnDrop} maxSize={maxFileSize} multiple={false} accept='image/*'>
 				  {({getRootProps, getInputProps}) => (
 				    <section>
 				      <div {...getRootProps()}>
